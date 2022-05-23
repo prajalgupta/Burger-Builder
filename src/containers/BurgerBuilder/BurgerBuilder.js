@@ -21,7 +21,6 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount () {
-        console.log(this.props); 
         this.props.onInitIngredients();
     }
 
@@ -81,7 +80,7 @@ class BurgerBuilder extends Component {
             orderSummary = <OrderSummary
                 ingredients={this.props.ings}
                 price={this.props.price}
-                purchaseCance lled={this.purchaseCancelHandler}
+                purchaseCancelled={this.purchaseCancelHandler}
                 purchaseContinued={this.purchaseContinueHandler} />;
         }
         // {salad: true, meat: false, ...}
